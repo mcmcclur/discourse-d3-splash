@@ -1,0 +1,5 @@
+en:
+  theme_metadata:
+    description: Adds a groovy d3-based animation to the front page
+    settings:
+      example_setting: A description of a setting.
