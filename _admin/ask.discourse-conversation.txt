@@ -1,0 +1,5 @@
+Figuring out how to insert a D3 animation into a Discourse instance did not seem at all intuitive; it was quite a bit trickier than I thought it would be. Ultimately, I based the structure of this project largely on this one, that also used D3:
+https://github.com/merefield/discourse-tc-tag-cloud/
+
+I had a final conversation with ask.dscourse to figure out how to upload and access the data that I saved here:
+https://ask.discourse.com/discourse-ai/ai-bot/shared-ai-conversations/-KQDHaZJUMk2VsTC1toAig
