@@ -2,3 +2,5 @@ node_modules
 .discourse-site
 _admin/api_key.txt
 .DS_Store
+_admin/.ipynb_checkpoints/
+
