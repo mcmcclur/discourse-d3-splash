@@ -62,10 +62,15 @@ function user_bubble_chart(userData, d3, tippy) {
     .style("stroke", "currentColor")
     .attr("fill", (_, i) => `url(#image${i})`)
   circs.each(function(d) {
-    console.log(['data is', d]);
-    tippy(this, {
-      content: `${d.username} - ${d.likes_received} likes`
-    })
+    try{
+      tippy(this, {
+        content: `${d.username} - ${d.likes_received} likes`
+      });
+      console.log(['should be good with ', d])
+    }
+    catch(e) {
+      console.log(['Uh-oh with ', d, e])
+    }
   })
 
   simulation.on("tick", function () {
