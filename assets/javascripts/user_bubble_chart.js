@@ -60,7 +60,12 @@ function user_bubble_chart(userData, d3, tippy) {
     .attr("r", (c) => Math.sqrt(c.likes_received))
     .attr("stroke-width", 0.1)
     .style("stroke", "currentColor")
-    .attr("fill", (_, i) => `url(#image${i})`);
+    .attr("fill", (_, i) => `url(#image${i})`)
+  circs.each(function(d) {
+    tippy(this, {
+      content: `${d.username} - ${d.likes_received} likes`
+    })
+  })
 
   simulation.on("tick", function () {
     circs.attr("cx", (c) => c.x).attr("cy", (c) => c.y);
