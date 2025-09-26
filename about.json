@@ -1,11 +1,11 @@
 {
-  "name": "d3-splash",
+  "name": "discourse-d3-splash",
   "component": true,
   "authors": "Mark McClure",
-  "about_url": "TODO: Put your theme's public repo or Meta topic URL here",
-  "license_url": "https://www.gnu.org/licenses/gpl-3.0.html",
-  "learn_more": "TODO",
-  "theme_version": "0.0.1",
+  "about_url": "https://github.com/mcmcclur/discourse-d3-splash",
+  "license_url": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html",
+  "learn_more": "See it in action here: https://discourse.marksmath.org/",
+  "theme_version": "0.0.2",
   "minimum_discourse_version": null, 
   "maximum_discourse_version": null,
   "assets": {
