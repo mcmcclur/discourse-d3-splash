@@ -6,6 +6,7 @@ import loadScript from "discourse/lib/load-script";
 export default class D3Splash extends Component {
   async ensureD3() {
     await loadScript(settings.theme_uploads.d3);
+    await loadScript(settings.theme_uploads.Popper);
     await loadScript(settings.theme_uploads.tippy);
     return loadScript(settings.theme_uploads.user_bubble_chart)
   }
