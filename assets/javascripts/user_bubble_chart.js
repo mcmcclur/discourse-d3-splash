@@ -61,15 +61,20 @@ function user_bubble_chart(userData, d3, tippy) {
     .attr("stroke-width", 0.1)
     .style("stroke", "currentColor")
     .attr("fill", (_, i) => `url(#image${i})`)
+    .on("pointerenter", function () {
+      d3.select(this).attr("stroke-width", 0.2);
+    })
+    .on("pointerleave", function () {
+      d3.select(this).attr("stroke-width", 0.1);
+    });
   circs.each(function(d) {
     try{
       tippy(this, {
         content: `${d.username} - ${d.likes_received} likes`
       });
-      console.log(['should be good with ', d])
     }
     catch(e) {
-      console.log(['Uh-oh with ', d, e])
+      console.log(['Uh-oh failure on', d, e])
     }
   })
 
