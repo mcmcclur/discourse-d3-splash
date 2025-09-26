@@ -11,6 +11,8 @@
   "assets": {
     "data": "assets/data/users_with_likes.json",
     "d3": "assets/javascripts/d3.v7.min.js",
+    "Popper": "assets/javascripts/popper.min.js",
+    "tippy": "assets/javascripts/tippy.umd.min.js",
     "user_bubble_chart": "assets/javascripts/user_bubble_chart.js"
   },
   "modifiers": {}
