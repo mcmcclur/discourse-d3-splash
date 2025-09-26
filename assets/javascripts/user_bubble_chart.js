@@ -1,7 +1,8 @@
 // Builds a groovy bubble chart illustrating users sized
 // by # of likes received in a discourse community.
 
-function user_bubble_chart(d3, userData) {
+function user_bubble_chart(userData, d3, tippy) {
+  console.log(['tippy is', tippy])
   let [xmin, xmax, ymin, ymax] = [-30, 30, -10, 10];
   userData.forEach(function (u) {
     const x0 = 4 * d3.randomUniform(xmin, xmax)();

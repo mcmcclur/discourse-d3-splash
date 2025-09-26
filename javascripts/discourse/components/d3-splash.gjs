@@ -6,6 +6,7 @@ import loadScript from "discourse/lib/load-script";
 export default class D3Splash extends Component {
   async ensureD3() {
     await loadScript(settings.theme_uploads.d3);
+    await loadScript(settings.theme_uploads.tippy);
     return loadScript(settings.theme_uploads.user_bubble_chart)
   }
 
@@ -14,7 +15,7 @@ export default class D3Splash extends Component {
     this.ensureD3().then(async function() {
       const data = await fetch(settings.theme_uploads.data)
           .then(r => r.json());
-      const chart = user_bubble_chart(d3,data);
+      const chart = user_bubble_chart(data, d3, tippy);
       d3.select(".d3-splash").append(() => chart)
     })
   }
